@@ -1,0 +1,79 @@
+[
+    {
+        "item": "מזוזה 12",
+        "img":"https://www.judaica-il.com/content/images/thumbs/0001512_-12-_600.jpeg",
+        "category": "מזוזות",
+        "barcode": "M012",
+        "size": "12",
+        "quantity": 17,
+        "price": 400,
+        "description": "מזוזה בכתב ספרדי מהודר, לאחר הגההת מחשב.",
+        "isActive": true
+    },
+    {
+        "item": "מגילת אסתר 24",
+        "img":"https://www.kodeshop.com/wp-content/uploads/2019/02/IMG-20190220-WA0067-1.jpg",
+        "category": "מגילת אסתר",
+        "barcode": "MG24",
+        "size": "24",
+        "quantity": 0,
+        "price": 6000,
+        "description": "מגילת אסתר בכתבספרדי מהודר, הזמנה אישית, בדיקת מחשב כלולה במחיר. ",
+        "isActive": true
+    },
+    {
+        "item": "מגילת אסתר 30",
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwDIuxatr6CJxZbUU3Ws_a5Rcqr2SyqCocqg&s",
+        "category": "מגילת אסתר",
+        "barcode": "MG30",
+        "size": "30",
+        "quantity": "",
+        "price": 6300,
+        "description": "מגילת אסתר בכתבספרדי מהודר, הזמנה אישית, בדיקת מחשב כלולה במחיר. ",
+        "isActive": true
+    },
+    {
+        "item": "בית מזוזה פשוט",
+        "img":"https://www.matanotstile.co.il/wp-content/uploads/2018/09/%D7%91%D7%99%D7%AA-%D7%9E%D7%96%D7%95%D7%96%D7%94-%D7%A4%D7%9C%D7%A1%D7%98%D7%99%D7%A7-%D7%9C%D7%91%D7%9F.jpg",
+        "category": "מזוזות",
+        "barcode": "BMP12",
+        "size": "12",
+        "quantity": 30,
+        "price": 10,
+        "description": "בית מזוזה פשוט, עשוי פלסטיק, מתאים לחללים פנימיים",
+        "isActive": true
+    },
+    {
+        "item": "בית מזוזה שקוף",
+        "img": "https://www.chabadstore.co.il/wp-content/uploads/2017/02/23093.jpg",
+        "category": "מזוזות",
+        "barcode": "BMS12",
+        "size": "12",
+        "quantity": 1,
+        "price": 20,
+        "description": "בית מזוזה שקוף ואטום, מגן ממים בצורה מיטבית, עשוי פלסטיק, מתאים לחללים חיצוניים ומוצלים",
+        "isActive": true
+    },
+    {
+        "item": "פרשיות תפילין",
+        "img":"https://www.mountsinai.co.il/wp-content/uploads/%D7%90%D7%A8%D7%99%D7%90%D7%9C-%D7%A1%D7%A4%D7%A8%D7%93%D7%99.jpg",
+        "category": "תפילין",
+        "barcode": "PT34",
+        "size": "5",
+        "quantity": 0,
+        "price": 2000,
+        "description": "פרשיות לתפילין, בכתב ספרדי מהודר, בדיקת מחשב כלולה במחיר",
+        "isActive": true
+    },
+    {
+        "item": "ערכת תפילין",
+        "img" : "https://cdn.cashcow.co.il/images/49667a69-fe65-4897-b904-0849787e8d9a.jpg",
+        "category": "תפילין",
+        "barcode": "TK34",
+        "size": "",
+        "quantity": 0,
+        "price": 4500,
+        "description": "ערכת תפילין מלאה הכוללת בתי תפילין מהודרים, רצועות עור (צד אחד שחור כנהוג), פרשיות בכתב ספרדי מהודר, בדיקת מחשב כלולה במחיר, ותיק לנשיאת התפילין",
+        "isActive": true
+    }
+]

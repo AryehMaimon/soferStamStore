@@ -1,0 +1,17 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+.home{
+  width: 100%;
+  padding: 20px;
+  margin-top: 60px;
+  min-height: 900px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+
+}

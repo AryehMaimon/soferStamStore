@@ -1,0 +1,11 @@
+.facts{
+    width: 20%;
+    height: 100%;
+    border: 1px solid var(--headAndFoot-bg-color);
+}
+@media (max-width: 870px) {
+   .facts{
+    display: none;
+   }
+}
+    

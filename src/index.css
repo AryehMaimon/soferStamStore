@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap');
+:root {
+  --headAndFoot-bg-color: #000000;
+  --headAndFoot-text-color: #ffffff;
+  
+}
+body {
+  font-family: 'Rubik', sans-serif;
+  direction: rtl; /* הגדרת הכיוון לימין לשמאל */
+  text-align: right;
+  
+}
+ul{
+  list-style-type: none;
+}
+a, a:visited {
+  text-decoration: none;
+  color: inherit; /* ניתן לשנות את הצבע בהתאם לרצונך */
+}
+
+
+/* עיצוב על focus */
+a:focus {
+  outline: none; /* הסרת המסגרת הכחולה בדפדפנים מסוימים */
+ 
+}
