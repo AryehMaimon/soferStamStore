@@ -1,11 +1,31 @@
-.facts{
+.facts {
     width: 20%;
-    height: 100%;
-    border: 1px solid var(--headAndFoot-bg-color);
-}
+    height: 310px; /* התאם את הגובה לפי הצורך */
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .innerFacts {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .innerFacts li {
+    height: 355px; /* יש להתאים לגובה של .facts */
+    overflow-y: auto; /* מאפשר גלילה אם התוכן ארוך מדי */
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .innerFacts h2 {
+    margin-bottom: 10px;
+  }
+
 @media (max-width: 870px) {
-   .facts{
-    display: none;
-   }
+    .facts {
+        display: none;
+    }
 }
-    
