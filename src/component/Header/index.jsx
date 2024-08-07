@@ -9,9 +9,12 @@ import { FaRegCircleUser } from "react-icons/fa6";
 
 import Navbar from '../Navbar';
 
-export default function Header({toggleMenu}) {
+export default function Header({toggleMenu,setIsOpenCart, isOpenCart}) {
     const [isSticky, setIsSticky] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
+    const openCart =()=>{
+      setIsOpenCart(true)
+     }
 
     const handleScroll = () => {
         if (window.scrollY > 500) { // Adjust this value based on your image height
@@ -20,7 +23,6 @@ export default function Header({toggleMenu}) {
           setIsSticky(false);
         }
       };
-
       useEffect(() => {
         window.addEventListener('scroll', handleScroll);
         return () => {
@@ -36,7 +38,7 @@ export default function Header({toggleMenu}) {
            
             <div className={styles.logoAndMenu}> <RiMenu3Line className={styles.menuIcon} onClick={toggleMenu}/> <GiQuillInk />  א.מ סופר סת"ם    </div>
             <div className={styles.artiAndQustAndAbout}>  <p>אודות</p> <p>מאמרים</p><p>שאלות נפוצות</p>    </div>
-            <div className={styles.bagAndUser} > <FaRegCircleUser />  <p>התחבר</p>   <IoBagOutline /> <p>סל קניות</p> </div>
+            <div className={styles.bagAndUser} > <FaRegCircleUser />  <p>התחבר/הרשם</p>   <IoBagOutline onClick={openCart}/> <p onClick={openCart}>סל קניות</p> </div>
                
                
             </div>

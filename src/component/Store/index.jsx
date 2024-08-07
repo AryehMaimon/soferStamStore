@@ -2,14 +2,25 @@ import React from 'react'
 import styles from "./style.module.css";
 import { useParams } from 'react-router-dom';
 import ItemCard from '../ItemCard';
-import data from '../../../src/items.json'
+import { useEffect,useState } from 'react';
+import axios from 'axios';
 
 
-export default function Store() {
+export default function Store({ isOpenCart, setIsOpenCart }) {
+    const [items, setItems] = useState([]);
+   
+    useEffect(() => {
+        axios.get('http://localhost:3030/store/all') 
+          .then(response => {
+            setItems(response.data);
+          })
+          .catch(error => {
+            console.error('Error fetching data:', error);
+          });
+      }, []);
 
-    const items = data
-    const { category } = useParams();
-    console.log('_________---------', category);
+    const { category = 'all' } = useParams();
+    console.log('_________---------', items);
     let filteredItems = []
     if (category=="all"){
         filteredItems = items;
@@ -25,7 +36,7 @@ export default function Store() {
             <h2 className={styles.categoryHeadline}> {categoryHeadline}:</h2>
             <div className={styles.itemsGrid}>
                 {filteredItems.map(item => (
-                    <ItemCard key={item.id} item={item} />
+                    <ItemCard key={item.id} item={item} setIsOpenCart={setIsOpenCart} isOpenCart={isOpenCart} />
                 ))}
             </div>
 

@@ -24,6 +24,7 @@
     bottom: 60; 
     transition: top 0.3s;
     margin-bottom: 60px;
+    cursor: pointer;
 }
 .sticky {
     position: fixed;
