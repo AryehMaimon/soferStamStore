@@ -3,21 +3,10 @@ import styles from "./style.module.css";
 import { useParams } from 'react-router-dom';
 import ItemCard from '../ItemCard';
 import { useEffect,useState } from 'react';
-import axios from 'axios';
 
 
-export default function Store({ isOpenCart, setIsOpenCart }) {
-    const [items, setItems] = useState([]);
+export default function Store({ isOpenCart, setIsOpenCart,items }) {
    
-    useEffect(() => {
-        axios.get('http://localhost:3030/store/all') 
-          .then(response => {
-            setItems(response.data);
-          })
-          .catch(error => {
-            console.error('Error fetching data:', error);
-          });
-      }, []);
 
     const { category = 'all' } = useParams();
     console.log('_________---------', items);

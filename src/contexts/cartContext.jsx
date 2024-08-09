@@ -12,11 +12,11 @@ export const CartProvider = ({ children }) => {
       if (existingItem) {
         return prevItems.map(item =>
           item._id === newProduct._id
-            ? { ...item, amountInCart: item.amountInCart + 1 }
+            ? { ...item, amountInCart: item.amountInCart + newProduct.amountInCart }
             : item
         );
       } else {
-        return [...prevItems, { ...newProduct, amountInCart: 1 }];
+        return [...prevItems, { ...newProduct }];
       }
     });
   };
@@ -69,7 +69,7 @@ export const CartProvider = ({ children }) => {
     setItems([]);
   };
 
-  const total = useMemo(() => items.reduce((sum, item) => sum + item.price * item.quantity, 0), [items]);
+  const total = useMemo(() => items.reduce((sum, item) => sum + item.price * item.amountInCart, 0), [items]);
 
   return (
     <CartContext.Provider value={{ items, addItem, amountPlus,amountMinus, removeItem, updateQuantity, clearCart, total }}>

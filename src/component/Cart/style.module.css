@@ -1,18 +1,30 @@
-.Cart{
-    width: 280px;
-    height: 510px;
-    padding: 10px; 
-    overflow: hidden;
-    border: black solid 1px;
+.Cart {
+  width: 280px;
+  height: 510px;
+  padding: 10px;
+  overflow: hidden;
+  border: black solid 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+ 
 }
-.cartHeadline{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+
+.cartHeadline {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   padding-bottom: 10px;
-    border-bottom: 1px solid black;
+  border-bottom: 1px solid black;
 
 }
+
+.cartItemsList {
+  flex: 1;
+   overflow-y: auto;
+    margin-top: 5px;
+}
+
 .cartItem {
   margin-top: 5px;
   width: 100%;
@@ -29,12 +41,14 @@
 .cartImg {
   width: 72px;
   height: 72px;
-  grid-row: 1 / 4; /* התמונה תתפוס שלוש שורות */
+  grid-row: 1 / 4;
+  /* התמונה תתפוס שלוש שורות */
   justify-self: center;
 }
 
 .cartItemName {
-  grid-row: 1 / 2; /* שם המוצר */
+  grid-row: 1 / 2;
+  /* שם המוצר */
   align-self: center;
 
 }
@@ -47,18 +61,36 @@
 
 }
 
-.cartAmount { 
- align-self: center;
+.cartAmount {
+  align-self: center;
 }
+
 .amountButton {
   background: none;
   border: none;
-  cursor: pointer; /* משנה את סמן העכבר לסמן יד */
-  font-size: 1rem; /* מגדיר את גודל הטקסט של הכפתורים */
-  margin: 0 5px; /* מרווחים מסביב לכפתורים */
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 0 5px;
 }
-.closeCart{
+
+.closeCart {
   background: none;
   border: none;
   cursor: pointer;
+}
+.cartFooter {
+  width: 90%;
+  border-top: 1px solid black;
+  padding-top: 10px;
+  align-items: center;
+  align-self: center;
+}
+.toPayButton{
+  width: 80%;
+  height: 30px;
+  margin: 20px;
+  /* align-self: center; */
+  color: white;
+  background: black;
+  border-radius: 20px;
 }
